@@ -19,8 +19,8 @@ An intelligent blog post generator powered by Google's Gemini 1.5 Pro model that
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/yourusername/blog-generator.git
-cd blog-generator
+git clone https://github.com/Atharv-Verma290/BlogGenerator.git
+cd BlogGenerator
 ```
 
 2. Install required dependencies:
@@ -86,7 +86,7 @@ The future of driving is undoubtedly intertwined with AI...
 ## Project Structure
 
 ```
-blog-generator/
+BlogGenerator/
 ├── blog_generator.py  # Main generator class
 ├── main.py           # Command-line interface
 ├── requirements.txt  # Project dependencies
