@@ -25,10 +25,10 @@ class BlogGenerator:
         2. Write a well-structured blog post using the researched information
 
         The blog must include:
-        - A captivating headline
-        - An engaging introduction that hooks the reader
-        - Well-researched and organized main content with relevant subheadings
-        - A strong conclusion that summarizes key points
+        - Heading: A captivating headline
+        - Introduction: An engaging introduction that hooks the reader
+        - Content: Well-researched and organized main content with relevant subheadings
+        - Summary: A strong conclusion that summarizes key points
 
         Format the blog in markdown and ensure all information is accurate and well-supported.
 
