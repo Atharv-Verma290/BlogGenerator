@@ -1,8 +1,11 @@
 import os
 import re
 from datetime import datetime
+from dotenv import load_dotenv
 import getpass
 from blog_generator import BlogGenerator
+
+load_dotenv()
 
 def get_api_key() -> str:
     """Get the Google API key from environment variable or user input."""
@@ -16,6 +19,19 @@ def get_api_key() -> str:
             raise ValueError("API key is required to run the blog generator.")
             
     return api_key
+
+# def get_api_key() -> str:
+#     """Get the Anthropic API key from environment variable or user input."""
+#     api_key = os.getenv("ANTHROPIC_API_KEY")
+    
+#     if not api_key:
+#         print("\nAnthropic API key not found in environment variables.")
+#         api_key = getpass.getpass("Please enter your Anthropic API key: ")
+        
+#         if not api_key:
+#             raise ValueError("API key is required to run the blog generator.")
+            
+#     return api_key
 
 def clean_topic(title: str) -> str:
     """Convert title to a valid filename."""

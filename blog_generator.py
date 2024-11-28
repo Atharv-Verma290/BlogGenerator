@@ -1,4 +1,5 @@
 from langchain_google_genai import ChatGoogleGenerativeAI
+from langchain_anthropic import ChatAnthropic
 from langchain_community.tools import WikipediaQueryRun, DuckDuckGoSearchRun
 from langchain_community.utilities import WikipediaAPIWrapper, DuckDuckGoSearchAPIWrapper
 from langchain.agents import AgentExecutor, create_react_agent
@@ -11,6 +12,12 @@ class BlogGenerator:
             temperature=0.7,
             google_api_key=google_api_key
         )
+        # self.llm = ChatAnthropic(
+        #     model="claude-3-5-sonnet-20240620",
+        #     temperature=0.7,
+        #     max_retries=2,
+        #     api_key = anthropic_api_key
+        # )
 
         self.tools = [
             WikipediaQueryRun(api_wrapper=WikipediaAPIWrapper()),
@@ -45,7 +52,7 @@ class BlogGenerator:
         Action: the action to take, should be one of [{tool_names}]
         Action Input: the input to the action
         Observation: the result of the action
-        (this Thought/Action/Action Input/Observation can repeat multiple times)
+        This Thought/Action/Action Input/Observation can repeat multiple times.
         Final Answer: the final answer to the original input question.
         
         When you have gathered enough information to write the blog, proceed to write it.

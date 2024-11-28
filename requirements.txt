@@ -4,3 +4,4 @@ langchain-google-genai
 google-generativeai
 wikipedia-api
 duckduckgo-search
+langchain-anthropic
