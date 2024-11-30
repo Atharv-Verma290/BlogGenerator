@@ -52,7 +52,7 @@ class BlogGenerator:
         Action: the action to take, should be one of [{tool_names}]
         Action Input: the input to the action
         Observation: the result of the action
-        This Thought/Action/Action Input/Observation can repeat multiple times.
+        ...this Thought/Action/Action Input/Observation can repeat N times.
         Final Answer: the final answer to the original input question.
         
         When you have gathered enough information to write the blog, proceed to write it.
